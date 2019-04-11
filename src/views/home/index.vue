@@ -10,3 +10,9 @@ export default {
   name: 'home'
 }
 </script>
+
+<style lang="less" scoped>
+.myColor {
+  color: @testColor;
+}
+</style>

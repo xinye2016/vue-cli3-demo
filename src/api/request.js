@@ -1,5 +1,8 @@
 import axios from 'axios'
 import router from '@/router'
+// import {
+//   Loading 
+// } from "element-ui";
 // import { messages } from '../assets/js/common.js' // 封装的提示文件
 import store from '@/store' // 引入vuex
 

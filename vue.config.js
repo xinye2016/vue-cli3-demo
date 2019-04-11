@@ -8,15 +8,19 @@ module.exports = {
     config.resolve.alias
       .set('@', resolve('src'))
   },
+
   devServer: {
     open: true // 打开浏览器窗口
   },
+
   // 定义less全局变量
-  css: {
-    loaderOptions: {
-      less: {
-        data: `@import "@/assets/less/global.less";`
-      }
+
+  pluginOptions: {
+    'style-resources-loader': {
+      preProcessor: 'less',
+      patterns: [
+        path.resolve(__dirname, './src/assets/less/global.less')
+      ]
     }
   }
 }
